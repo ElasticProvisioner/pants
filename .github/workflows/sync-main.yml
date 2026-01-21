@@ -43,4 +43,6 @@ jobs:
           git pull --rebase
 
       - name: push to origin/main
-        run: git push origin main
+        run: |
+          git push origin main
+          git push --tags origin main
