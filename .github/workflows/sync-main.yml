@@ -7,6 +7,9 @@ on:
     - cron: '0 */6 * * *'    # every 6 hours, adjust as needed
   workflow_dispatch:
 
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   sync:
     runs-on: ubuntu-latest
